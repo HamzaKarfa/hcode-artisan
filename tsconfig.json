@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "NodeNext",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@tests/*": ["./tests/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@commands/*": ["./src/commands/*"],
+      "@framework/*": ["./src/framework/*"],
+      "@container/*": ["./src/framework/Container/*"],
+      "@providers/*": ["./src/framework/Providers/*"],
+      "@router/*": ["./src/framework/Router/*"]
+    }
+  },
+  "include": ["src"]
+}

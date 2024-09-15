@@ -1,0 +1,65 @@
+{
+  "name": "hcode-artisan",
+  "version": "1.0.2",
+  "main": "src/index.ts",
+  "author": "HCodeStudio",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "jest",
+    "dev": "nodemon --exec ts-node src/index.ts"
+  },
+  "bin": {
+    "hcode-artisan": "./dist/commands/index.js"
+  },
+  "keywords": [
+    "Artisan",
+    "TypeScript",
+    "CLI"
+  ],
+  "license": "ISC",
+  "description": "",
+  "imports": {
+    "@/*": [
+      "./src/*"
+    ],
+    "@utils/*": [
+      "./src/utils/*"
+    ],
+    "@commands/*": [
+      "./src/commands/*"
+    ],
+    "@framework/*": [
+      "./src/framework/*"
+    ],
+    "@container/*": [
+      "./src/framework/Container/*"
+    ],
+    "@providers/*": [
+      "./src/framework/Providers/*"
+    ],
+    "@router/*": [
+      "./src/framework/Router/*"
+    ]
+  },
+  "dependencies": {
+    "@tidbcloud/serverless": "^0.2.0",
+    "@types/node": "^22.5.4",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.33.0",
+    "express": "^4.21.0",
+    "glob": "^11.0.0",
+    "path": "^0.12.7",
+    "reflect-metadata": "^0.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.21",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5"
+  }
+}
